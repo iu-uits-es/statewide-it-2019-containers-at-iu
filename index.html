@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Containers at IU</title>
+
+    <link href="//assets.iu.edu/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/swit19.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+              <img src="img/iu-logo-top-tail.svg" style="position: absolute; left: 0; top: 0; width: 10%; background: inherit; border: 0; box-shadow: none;" />
+              <h3 style="margin-top: 5%; margin-bottom: 3em; margin-left: 13%; text-align: left">Containers at IU</h3>
+              <div style="float: left; text-align: left; color: #ccc">
+                <p style="font-size: smaller;">https://bit.ly/2NnAtQd</p>
+                <strong>James Bennett</strong><br />Enterprise Systems, UITS
+              </div>
+              <div style="float: right; margin-top: 1.5rem;">
+                <img src="img/swit-19-logo.png" style="background: inherit; border: 0; box-shadow: none;" />
+              </div>
+          </section>
+          <section>
+            <h3>Agenda</h3>
+            <ul>
+              <li>Timeline of Adoption</li>
+              <li>Creating the Enterprise Environment</li>
+              <li>Things we've learned</li>
+              <li>Q&A</li>
+            </ul>
+          </section>
+        </section>
+        <section data-background-image="img/ask-questions.png">
+          <h2 class="textbox">Questions?</h2>
+        </section>
+        <section>
+            <h2>Thanks!</h2>
+            <img src="img/thanks.png" style="width:50%;">
+            <p>James Bennett - jawbenne@iu.edu</p>
+            <p><small><a href="https://github.com/iu-uits-es/statewide-it-2019-containers-at-iu" style="color: white;">https://github.com/iu-uits-es/statewide-it-2019-containers-at-iu</a></small></p>
+        </section>
+        <div id="footer" class="footer" style="display: none;">
+          <img src="img/iu-logo.svg" />
+          <span>Statewide IT Conference 2019</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        history: true,
+        controls: true,
+        progress: true,
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true }
+        ]
+      });
+      Reveal.addEventListener( 'slidechanged', function( event ) {
+				if(event.indexh === 0 && event.indexv == 0) {
+					document.getElementById('footer').style.display = 'none';
+				} else if(event.indexv == 0) {
+					document.getElementById('footer').style.display = 'none';
+				} else {
+					document.getElementById('footer').style.display = 'flex';
+				}
+			} );
+    </script>
+  </body>
+</html>
