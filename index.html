@@ -33,7 +33,7 @@
               <img src="img/iu-logo-top-tail.svg" style="position: absolute; left: 0; top: 0; width: 10%; background: inherit; border: 0; box-shadow: none;" />
               <h3 style="margin-top: 5%; margin-bottom: 3em; margin-left: 13%; text-align: left">Containers at IU</h3>
               <div style="float: left; text-align: left; color: #ccc">
-                <p style="font-size: smaller;">https://bit.ly/2NnAtQd</p>
+                <p style="font-size: smaller;">git.io/JeuuN</p>
                 <strong>James Bennett</strong><br />Enterprise Systems, UITS
               </div>
               <div style="float: right; margin-top: 1.5rem;">
@@ -41,44 +41,209 @@
               </div>
           </section>
           <section>
-            <h3>Agenda</h3>
+            <h3>Motivation</h3>
             <ul>
-              <li>Timeline of Adoption</li>
-              <li>Docker EE Stats</li>
-              <li>Things we've learned</li>
-              <li>Future goals</li>
-              <li>Q&A</li>
+              <li class="fragment fade-in-then-semi-out">ESI maintains Java deployment infrastructure</li>
+              <li class="fragment fade-in-then-semi-out">Better developer experience</li>
+              <li class="fragment fade-in-then-semi-out">Deliver services faster</li>
+              <li class="fragment fade-in-then-semi-out">Cloud readiness</li>
             </ul>
           </section>
         </section>
         <section>
-          <section data-background-image="img/history.jfif">
-            <h2 class="textbox">Timeline of Adoption</h2>
+          <section data-background-image="img/starting-out.jfif">
+            <div class="textbox">
+              <h2>The early times</h2>
+              <h5>Individual containers</h5>
+            </div>
+          </section>
+          <section>
+            <h3>Early exploration</h3>
+            <ul>
+              <li class="fragment fade-in-then-semi-out">Started in September 2014</li>
+              <li class="fragment fade-in-then-semi-out">Early focus on creating images for proof of concept work</li>
+              <li class="fragment fade-in-then-semi-out">Early adopter of Docker Datacenter</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Components</h3>
+            <ul>
+              <li>Universal Control Plane (UCP)</li>
+              <li>Docker Trusted Registry (DTR)</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Early problems</h3>
+            <ul>
+              <li class="fragment fade-in-then-semi-out">Networking</li>
+              <li class="fragment fade-in-then-semi-out">Docker evolution</li>
+              <li class="fragment fade-in-then-semi-out">Writing good images</li>
+              <li class="fragment fade-in-then-semi-out">CI strategies</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Docker Swarm</h3>
+            <ul class="left-col">
+              <li class="fragment fade-in-then-semi-out">First announced at DockerCon 2016</li>
+              <li class="fragment fade-in-then-semi-out">Service-based model for container orchestration</li>
+              <li class="fragment fade-in-then-semi-out">Beta test in late 2016</li>
+              <li class="fragment fade-in-then-semi-out">First infoshares through Statewide IT</li>
+            </ul>
+            <img src="img/docker-swarm.png" class="right-col" />
           </section>
         </section>
         <section>
-          <section data-background-image="img/stats.jfif">
-            <h2 class="textbox">Docker EE Stats</h2>
+          <section data-background-image="img/early-tooling.jfif">
+            <div class="textbox">
+              <h2>Early container orchestration</h2>
+              <h5>Using Docker Swarm</h5>
+            </div>
+          </section>
+          <section>
+            <blockquote cite="https://devopedia.org/container-orchestration">
+                &ldquo;Container orchestration is a process that automates the deployment, management, scaling, networking, and availability of container-based applications on a cluster of machines.&rdquo;
+            </blockquote>
+          </section>
+          <section>
+            <h3>Continued exploration</h3>
+            <ul>
+              <li class="fragment fade-in-then-semi-out">Migration from Docker Datacenter to Docker EE</li>
+              <li class="fragment fade-in-then-semi-out">First test applications in late 2016</li>
+              <li class="fragment fade-in-then-semi-out">Docker birthday outreach events</li>
+              <li class="fragment fade-in-then-semi-out">Production environment established in mid-2017</li>
+              <li class="fragment fade-in-then-semi-out">Adoption by close peers</li>
+            </ul>
+          </section>
+          <section>
+            <h3>New problems</h3>
+            <ul>
+              <li class="fragment fade-in-then-semi-out">Dynamic service routing through</li>
+              <li class="fragment fade-in-then-semi-out">Engine hardening</li>
+              <li class="fragment fade-in-then-semi-out">Configuration and secrets management</li>
+            </ul>
           </section>
         </section>
         <section>
-          <section data-background-image="img/lessons.jfif">
-            <h2 class="textbox">Things we've learned</h2>
+          <section data-background-image="img/growth.jfif">
+            <div class="textbox">
+              <h2>Growth and expansion</h2>
+              <h5>Multi-tenant environment</h5>
+            </div>
           </section>
+          <section>
+            <h3>Sharing the environment with others</h3>
+            <ul>
+              <li class="fragment fade-in-then-semi-out">Expanded outreach</li>
+              <li class="fragment fade-in-then-semi-out">Created a shared sandbox environment</li>
+              <li class="fragment fade-in-then-semi-out">Created docker.iu.edu</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Evolving Challenges</h3>
+            <ul>
+              <li class="fragment fade-in-then-semi-out">Managing access to the environment</li>
+              <li class="fragment fade-in-then-semi-out">Helping onboard new use cases</li>
+              <li class="fragment fade-in-then-semi-out">Managing higher volume of workloads</li>
+              <li class="fragment fade-in-then-semi-out">Identifying problematic workloads</li>
+              <li class="fragment fade-in-then-semi-out">Continuous delivery to production</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Usage statistics</h3>
+            <ul class="left-col">
+              <li>Three environments</li>
+              <li>29 teams</li>
+              <li>576 distinct services</li>
+              <li>Nearly 1,000 active containers</li>
+            </ul>
+            <img src="img/docker-ee-usage.png" class="right-col" />
+          </section>
+          <section>
+            <h3>Implemented new tools</h3>
+            <ul>
+              <li class="fragment fade-in-then-semi-out">Redis - Caching & session management</li>
+              <li class="fragment fade-in-then-semi-out">Consul - Configuration management</li>
+              <li class="fragment fade-in-then-semi-out">Vault - Secrets management (experimental)</li>
+            </ul>
+          </section>
+          <section>
+              <h3 style="margin-bottom: 50px;">Docker Swarm</h3>
+              <div style="clear: both;">
+                  <div class="left-col" style="border-right: 1px solid white;">
+                      <h4>Positives</h4>
+                      <ul>
+                          <li class="fragment fade-in-then-semi-out">Built into the Docker runtime</li>
+                          <li class="fragment fade-in-then-semi-out">Easy to setup</li>
+                          <li class="fragment fade-in-then-semi-out">Simple, opinionated, full-stack model</li>
+                      </ul>
+                  </div>
+                  <div class="right-col">
+                      <h4>Negatives</h4>
+                      <ul>
+                          <li class="fragment fade-in-then-semi-out">Arrived late</li>
+                          <li class="fragment fade-in-then-semi-out">Slow to evolve</li>
+                          <li class="fragment fade-in-then-semi-out">Unstable networking</li>
+                          <li class="fragment fade-in-then-semi-out">Not adopted by vendors</li>
+                      </ul>
+                  </div>
+              </div>
+            </section>
         </section>
         <section>
           <section data-background-image="img/journey.jfif">
-            <h2 class="textbox">Future Goals</h2>
+            <div class="textbox">
+              <h2>Where we're headed</h2>
+            </div>
+          </section>
+          <section>
+            <h3>Kubernetes</h3>
+            <div style="clear: both;">
+              <ul class="left-col">
+                  <li class="fragment fade-in-then-semi-out">Open sourced in 2015</li>
+                  <li class="fragment fade-in-then-semi-out">Maintained by the CNCF</li>
+                  <li class="fragment fade-in-then-semi-out">General-purpose approach to container orchestration</li>
+                  <li class="fragment fade-in">Very wide adoption by vendors</li>
+              </ul>
+              <img src="img/kubernetes.png" class="right-col" />
+            </div>
+          </section>
+          <section>
+            <h3>Roadmap items</h3>
+            <ul>
+              <li class="fragment fade-in-then-semi-out">Finish Vault implementation</li>
+              <li class="fragment fade-in-then-semi-out">Get environment approved for critical/restricted data</li>
+              <li class="fragment fade-in-then-semi-out">Spinnaker - Continuous delivery</li>
+              <li class="fragment fade-in-then-semi-out">Helm - Shareable Kubernetes resources</li>
+              <li class="fragment fade-in-then-semi-out">Container Storage Interface</li>
+              <li class="fragment fade-in-then-semi-out">Log management strategy</li>
+              <li class="fragment fade-in-then-semi-out">Implement a service mesh</li>
+            </ul>
           </section>
         </section>
-        <section data-background-image="img/ask-questions.png">
+        <section>
+          <section data-background-image="img/success.jfif">
+            <h2 class="textbox">Keys to success</h2>
+          </section>
+          <section>
+            <h3>Keys to success</h3>
+            <ul>
+              <li class="fragment fade-in-then-semi-out">Version controlled assets</li>
+              <li class="fragment fade-in-then-semi-out">Strong versioning of images</li>
+              <li class="fragment fade-in-then-semi-out">Health checks & monitoring</li>
+              <li class="fragment fade-in-then-semi-out">Resource constraints & placement preferences</li>
+              <li class="fragment fade-in-then-semi-out">Update & rollback policies</li>
+              <li class="fragment fade-in-then-semi-out">Manage configuration outside of container environment</li>
+            </ul>
+          </section>
+        </section>
+        <section data-background-image="img/questions.jfif" data-background-position="bottom">
           <h2 class="textbox">Questions?</h2>
         </section>
-        <section>
-            <h2>Thanks!</h2>
-            <img src="img/thanks.png" style="width:50%;">
+        <section data-background-image="img/thanks.jfif">
+          <div class="textbox" style="margin-top: 400px;">
             <p>James Bennett - jawbenne@iu.edu</p>
-            <p><small><a href="https://github.com/iu-uits-es/statewide-it-2019-containers-at-iu" style="color: white;">https://github.com/iu-uits-es/statewide-it-2019-containers-at-iu</a></small></p>
+            <p><small><a href="https://github.com/iu-uits-es/statewide-it-2019-containers-at-iu" style="color: white;">git.io/JeuuN</a></small></p>
+          </div>
         </section>
         <div id="footer" class="footer" style="display: none;">
           <img src="img/iu-logo.svg" />
